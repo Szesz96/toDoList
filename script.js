@@ -102,7 +102,7 @@ const changeTodoText = () => {
         popup.style.display = 'none'
         popupInfo.textContent = ''
     } else {
-        popupInfo.textContent = 'Musisz podać jakąś treść'
+        popupInfo.textContent = 'You have to type something'
     }
 }
 
@@ -112,7 +112,7 @@ const deleteTodo = e => {
     const allTodos = ulList.querySelectorAll('li')
 
     if(allTodos.length === 0){
-        errorText.textContent = 'Brak zadań na liście'
+        errorText.textContent = 'No tasks to do'
     }
 }
 
